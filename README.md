@@ -65,5 +65,5 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 For queries or suggestions, feel free to reach out:
 - **Author**: Khizar Ali
 - **GitHub**: [Alikhizar142](https://github.com/Alikhizar142)
-- **Email**: khizarali@example.com
+- **Email**: p229269@pwr.nu.edu.pk
 

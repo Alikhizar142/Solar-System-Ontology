@@ -1,0 +1,494 @@
+@prefix : <http://example.org/solarsystem#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Planet Definitions
+:Mercury rdf:type :Planet ;
+    rdfs:label "Mercury" ;
+    :colorPlanet [ rdf:_1 "Gray" ] ;
+    :atmosphericComposition [ rdf:_1 "Mostly None" ] ;
+    :mass 0.33 ;
+    :diameter 4879 ;
+    :density 5427 ;
+    :surfaceGravity 3.7 ;
+    :escapeVelocity 4.3 ;
+    :rotationPeriod 1407.6 ;
+    :lengthOfDay 4222.6 ;
+    :distanceFromSun 57.9 ;
+    :meanTemperature 167 ;
+    :numberOfMoons 0 ;
+    :ringSystem "No" ;
+    :globalMagneticField "Yes" ;
+    :perihelion "46"^^xsd:decimal ;
+    :aphelion "69.8"^^xsd:decimal ;
+    :orbitalPeriod "88"^^xsd:decimal ;
+    :orbitalVelocity "47.4"^^xsd:decimal ;
+    :orbitalEccentricity "0.206"^^xsd:decimal ;
+    :obliquityToOrbit "0.034"^^xsd:decimal ;
+    :surfacePressure "0"^^xsd:decimal ;
+    :surfaceTemperature "-173 to 427" ;
+    :atmosphericPressure "0"^^xsd:decimal ;
+    :surfaceFeatures [
+        rdf:type rdf:Bag ;
+        rdf:_1 "Craters" ;
+        rdf:_2 "Scarps"
+    ] ;
+    :composition [
+        rdf:type rdf:Bag ;
+        rdf:_1 "Iron Core" ;
+        rdf:_2 "Silicate Mantle"
+    ];
+    :hasSatellite [ rdf:type rdf:Bag;
+     rdf:_1 :Nomoon ].
+:Venus rdf:type :Planet ;
+    rdfs:label "Venus" ;
+    :colorPlanet [ rdf:_1 "Brown" ; rdf:_2 "Grey" ] ;
+    :atmosphericComposition [ rdf:_1 "Carbon Dioxide (96.5%)" ] ;
+    :mass 4.87 ;
+    :diameter 12104 ;
+    :density 5243 ;
+    :surfaceGravity 8.9 ;
+    :escapeVelocity 10.4 ;
+    :rotationPeriod -5832.5 ;
+    :lengthOfDay 2802.0 ;
+    :distanceFromSun 108.2 ;
+    :meanTemperature 464 ;
+    :numberOfMoons 0 ;
+    :ringSystem "No" ;
+    :globalMagneticField "No" ;
+    rdfs:label "Venus" ;
+    :perihelion "107.5"^^xsd:decimal ;
+    :aphelion "108.9"^^xsd:decimal ;
+    :orbitalPeriod "224.7"^^xsd:decimal ;
+    :orbitalVelocity "35"^^xsd:decimal ;
+    :orbitalEccentricity "0.007"^^xsd:decimal ;
+    :obliquityToOrbit "177.4"^^xsd:decimal ;
+    :surfacePressure "92"^^xsd:decimal ;
+    :surfaceTemperature "464" ;
+    :atmosphericPressure "92"^^xsd:decimal ;
+    :surfaceFeatures [
+        rdf:type rdf:Bag ;
+        rdf:_1 "Volcanoes" ;
+        rdf:_2 "Lava Plains" ;
+        rdf:_3 "Craters"
+    ] ;
+    :composition [
+        rdf:type rdf:Bag ;
+        rdf:_1 "Basaltic Rock" ;
+        rdf:_2 "Carbon Dioxide"
+    ];
+    :hasSatellite [ rdf:type rdf:Bag;
+     rdf:_1 :Nomoon ].
+
+:Earth rdf:type :Planet ;
+    rdfs:label "Earth" ;
+    :colorPlanet [ rdf:_1 "Blue" ; rdf:_2 "Brown" ; rdf:_3 "Green" ; rdf:_4 "White" ] ;
+    :atmosphericComposition [ rdf:_1 "Nitrogen (78.1%)" ; rdf:_2 "Oxygen" ] ;
+    :mass 5.97 ;
+    :diameter 12742 ;
+    :density 5514 ;
+    :surfaceGravity 9.8 ;
+    :escapeVelocity 11.2 ;
+    :rotationPeriod 23.9 ;
+    :lengthOfDay 24.0 ;
+    :distanceFromSun 149.6 ;
+    :meanTemperature 15 ;
+    :numberOfMoons 1 ;
+    :ringSystem "No" ;
+    :globalMagneticField "Yes" ;
+     :perihelion "147.1"^^xsd:decimal ;
+    :aphelion "152.1"^^xsd:decimal ;
+    :orbitalPeriod "365.2"^^xsd:decimal ;
+    :orbitalVelocity "29.8"^^xsd:decimal ;
+    :orbitalEccentricity "0.017"^^xsd:decimal ;
+    :obliquityToOrbit "23.4"^^xsd:decimal ;
+    :surfacePressure "1"^^xsd:decimal ;
+    :surfaceTemperature "-89 to 58" ;
+    :atmosphericPressure "1"^^xsd:decimal ;
+    :surfaceFeatures [
+        rdf:type rdf:Bag ;
+        rdf:_1 "Oceans" ;
+        rdf:_2 "Mountains" ;
+        rdf:_3 "Plains"
+    ] ;
+    :composition [
+        rdf:type rdf:Bag ;
+        rdf:_1 "Iron Core" ;
+        rdf:_2 "Silicate Mantle" ;
+        rdf:_3 "Water"
+    ] ;
+   :hasSatellite [
+    rdf:type rdf:Bag ;
+    rdf:_1 :Moon
+                    ] .
+:Mars rdf:type :Planet ;
+    rdfs:label "Mars" ;
+    :colorPlanet [ rdf:_1 "Red" ; rdf:_2 "Brown and Tan" ] ;
+    :atmosphericComposition [ rdf:_1 "Carbon Dioxide (95.3%)" ] ;
+    :mass 0.642 ;
+    :diameter 6779 ;
+    :density 3933 ;
+    :surfaceGravity 3.7 ;
+    :escapeVelocity 5.0 ;
+    :rotationPeriod 24.6 ;
+    :lengthOfDay 24.7 ;
+    :distanceFromSun 227.9 ;
+    :meanTemperature -65 ;
+    :numberOfMoons 2 ;
+    :ringSystem "No" ;
+    :globalMagneticField "No" ;
+     :perihelion "206.6"^^xsd:decimal ;
+    :aphelion "249.2"^^xsd:decimal ;
+    :orbitalPeriod "687"^^xsd:decimal ;
+    :orbitalVelocity "24.1"^^xsd:decimal ;
+    :orbitalEccentricity "0.093"^^xsd:decimal ;
+    :obliquityToOrbit "25.2"^^xsd:decimal ;
+    :surfacePressure "0.006"^^xsd:decimal ;
+    :surfaceTemperature "-87 to -5" ;
+    :atmosphericPressure "0.006"^^xsd:decimal ;
+    :surfaceFeatures [
+        rdf:type rdf:Bag ;
+        rdf:_1 "Canyons" ;
+        rdf:_2 "Volcanoes" ;
+        rdf:_3 "Craters"
+    ] ;
+    :composition [
+        rdf:type rdf:Bag ;
+        rdf:_1 "Iron Oxide" ;
+        rdf:_2 "Silicates"
+     ];
+    :hasSatellite [
+    rdf:type rdf:Bag ;
+    rdf:_1 :Phobos ;
+    rdf:_2 :Deimos
+] .
+
+
+
+:Jupiter rdf:type :Planet ;
+    rdfs:label "Jupiter" ;
+    :colorPlanet [ rdf:_1 "Brown and White" ; rdf:_2 "Orange" ] ;
+    :atmosphericComposition [ rdf:_1 "Hydrogen" ; rdf:_2 "Helium" ] ;
+    :mass 1898 ;
+    :diameter 139820 ;
+    :density 1326 ;
+    :surfaceGravity 24.8 ;
+    :escapeVelocity 59.5 ;
+    :rotationPeriod 9.9 ;
+    :lengthOfDay 9.9 ;
+    :distanceFromSun 778.6 ;
+    :meanTemperature -110 ;
+    :numberOfMoons 79 ;
+    :ringSystem "Yes" ;
+    :globalMagneticField "Yes" ;
+     :perihelion "740.5"^^xsd:decimal ;
+    :aphelion "816.6"^^xsd:decimal ;
+    :orbitalPeriod "4332.6"^^xsd:decimal ;
+    :orbitalVelocity "13.1"^^xsd:decimal ;
+    :orbitalEccentricity "0.049"^^xsd:decimal ;
+    :obliquityToOrbit "3.1"^^xsd:decimal ;
+    :surfacePressure "Unknown" ;
+    :surfaceTemperature "-108" ;
+    :atmosphericPressure "Unknown" ;
+    :surfaceFeatures [
+        rdf:type rdf:Bag ;
+        rdf:_1 "Storms" ;
+        rdf:_2 "Belts" ;
+        rdf:_3 "Zones"
+    ] ;
+    :composition [
+        rdf:type rdf:Bag ;
+        rdf:_1 "Hydrogen" ;
+        rdf:_2 "Helium"
+    ];
+    :hasSatellite [
+    rdf:type rdf:Bag ;
+    rdf:_1 :Io ;
+    rdf:_2 :Europa ;
+    rdf:_3 :Ganymede ;
+    rdf:_4 :Callisto ;
+    rdf:_5 :Amalthea ;
+    rdf:_6 :Himalia ;
+    rdf:_7 :Elara ;
+    rdf:_8 :Pasiphae ;
+    rdf:_9 :Sinope ;
+    rdf:_10 :Lysithea ;
+    rdf:_11 :Carme ;
+    rdf:_12 :Ananke ;
+    rdf:_13 :Leda ;
+    rdf:_14 :Thebe ;
+    rdf:_15 :Adrastea ;
+    rdf:_16 :Metis ;
+    rdf:_17 :Callirrhoe ;
+    rdf:_18 :Themisto ;
+    rdf:_19 :Megaclite ;
+    rdf:_20 :Taygete ;
+    rdf:_21 :Chaldene ;
+    rdf:_22 :Harpalyke ;
+    rdf:_23 :Kalyke ;
+    rdf:_24 :Iocaste ;
+    rdf:_25 :Erinome ;
+    rdf:_26 :Isonoe ;
+    rdf:_27 :Praxidike ;
+    rdf:_28 :Autonoe ;
+    rdf:_29 :Thyone ;
+    rdf:_30 :Hermippe ;
+    rdf:_31 :Aitne ;
+    rdf:_32 :Eurydome ;
+    rdf:_33 :Euanthe ;
+    rdf:_34 :Euporie ;
+    rdf:_35 :Orthosie ;
+    rdf:_36 :Sponde ;
+    rdf:_37 :Kale ;
+    rdf:_38 :Pasithee ;
+    rdf:_39 :Hegemone ;
+    rdf:_40 :Mneme ;
+    rdf:_41 :Aoede ;
+    rdf:_42 :Thelxinoe ;
+    rdf:_43 :Arche ;
+    rdf:_44 :Kallichore ;
+    rdf:_45 :Helike ;
+    rdf:_46 :Carpo ;
+    rdf:_47 :Eukelade ;
+    rdf:_48 :Cyllene ;
+    rdf:_49 :Kore ;
+    rdf:_50 :Herse ;
+    rdf:_51 :S_2000_J11 ;
+    rdf:_52 :S_2003_J2 ;
+    rdf:_53 :S_2003_J3 ;
+    rdf:_54 :S_2003_J4 ;
+    rdf:_55 :S_2003_J5 ;
+    rdf:_56 :S_2003_J9 ;
+    rdf:_57 :S_2003_J10 ;
+    rdf:_58 :S_2003_J12 ;
+    rdf:_59 :S_2003_J15 ;
+    rdf:_60 :S_2003_J16 ;
+    rdf:_61 :S_2003_J18 ;
+    rdf:_62 :S_2003_J19 ;
+    rdf:_63 :S_2003_J23 ;
+    rdf:_64 :S_2010_J1 ;
+    rdf:_65 :S_2010_J2 ;
+    rdf:_66 :S_2011_J1 ;
+    rdf:_67 :S_2011_J2
+] .
+:Saturn rdf:type :Planet ;
+    rdfs:label "Saturn" ;
+    :colorPlanet [ rdf:_1 "Golden" ; rdf:_2 "Brown" ; rdf:_3 "Blue-Gray" ] ;
+    :atmosphericComposition [ rdf:_1 "Hydrogen" ; rdf:_2 "Helium" ] ;
+    :mass 568 ;
+    :diameter 116460 ;
+    :density 687 ;
+    :surfaceGravity 10.4 ;
+    :escapeVelocity 35.5 ;
+    :rotationPeriod 10.7 ;
+    :lengthOfDay 10.7 ;
+    :distanceFromSun 1433.5 ;
+    :meanTemperature -140 ;
+    :numberOfMoons 83 ;
+    :ringSystem "Yes" ;
+    :globalMagneticField "Yes" ;
+     :perihelion "1350"^^xsd:decimal ;
+    :aphelion "1514.5"^^xsd:decimal ;
+    :orbitalPeriod "10759"^^xsd:decimal ;
+    :orbitalVelocity "9.7"^^xsd:decimal ;
+    :orbitalEccentricity "0.057"^^xsd:decimal ;
+    :obliquityToOrbit "26.7"^^xsd:decimal ;
+    :surfacePressure "Unknown" ;
+    :surfaceTemperature "-139" ;
+    :atmosphericPressure "Unknown" ;
+    :surfaceFeatures [
+        rdf:type rdf:Bag ;
+        rdf:_1 "Rings" ;
+        rdf:_2 "Hexagonal Storm"
+    ] ;
+    :composition [
+        rdf:type rdf:Bag ;
+        rdf:_1 "Hydrogen" ;
+        rdf:_2 "Helium"
+    ] ;
+    :hasSatellite [
+    rdf:type rdf:Bag ;
+    rdf:_1 :Mimas ;
+    rdf:_2 :Enceladus ;
+    rdf:_3 :Tethys ;
+    rdf:_4 :Dione ;
+    rdf:_5 :Rhea ;
+    rdf:_6 :Titan ;
+    rdf:_7 :Hyperion ;
+    rdf:_8 :Iapetus ;
+    rdf:_9 :Phoebe ;
+    rdf:_10 :Janus ;
+    rdf:_11 :Epimetheus ;
+    rdf:_12 :Helene ;
+    rdf:_13 :Telesto ;
+    rdf:_14 :Calypso ;
+    rdf:_15 :Atlas ;
+    rdf:_16 :Prometheus ;
+    rdf:_17 :Pandora ;
+    rdf:_18 :Pan ;
+    rdf:_19 :Methone ;
+    rdf:_20 :Pallene ;
+    rdf:_21 :Polydeuces ;
+    rdf:_22 :Daphnis ;
+    rdf:_23 :Anthe ;
+    rdf:_24 :Aegaeon ;
+    rdf:_25 :Ymir ;
+    rdf:_26 :Paaliaq ;
+    rdf:_27 :Tarvos ;
+    rdf:_28 :Ijiraq ;
+    rdf:_29 :Suttungr ;
+    rdf:_30 :Kiviuq ;
+    rdf:_31 :Mundilfari ;
+    rdf:_32 :Albiorix ;
+    rdf:_33 :Skathi ;
+    rdf:_34 :Erriapus ;
+    rdf:_35 :Siarnaq ;
+    rdf:_36 :Thrymr ;
+    rdf:_37 :Narvi ;
+    rdf:_38 :Aegir ;
+    rdf:_39 :Bebhionn ;
+    rdf:_40 :Bergelmir ;
+    rdf:_41 :Bestla ;
+    rdf:_42 :Farbauti ;
+    rdf:_43 :Fenrir ;
+    rdf:_44 :Fornjot ;
+    rdf:_45 :Hati ;
+    rdf:_46 :Hyrrokkin ;
+    rdf:_47 :Kari ;
+    rdf:_48 :Loge ;
+    rdf:_49 :Skoll ;
+    rdf:_50 :Surtur ;
+    rdf:_51 :Jarnsaxa ;
+    rdf:_52 :Greip ;
+    rdf:_53 :Tarqeq ;
+    rdf:_54 :S_2004_S7 ;
+    rdf:_55 :S_2004_S12 ;
+    rdf:_56 :S_2004_S13 ;
+    rdf:_57 :S_2004_S17 ;
+    rdf:_58 :S_2006_S1 ;
+    rdf:_59 :S_2006_S3 ;
+    rdf:_60 :S_2007_S2 ;
+    rdf:_61 :S_2007_S3
+] .
+
+:Uranus rdf:type :Planet ;
+    rdfs:label "Uranus" ;
+    :colorPlanet [ rdf:_1 "Green" ; rdf:_2 "Blue" ] ;
+    :atmosphericComposition [ rdf:_1 "Hydrogen" ; rdf:_2 "Helium" ] ;
+    :mass 86.8 ;
+    :diameter 50724 ;
+    :density 1271 ;
+    :surfaceGravity 8.9 ;
+    :escapeVelocity 21.3 ;
+    :rotationPeriod -17.2 ;
+    :lengthOfDay 17.2 ;
+    :distanceFromSun 2872.5 ;
+    :meanTemperature -195 ;
+    :numberOfMoons 27 ;
+    :ringSystem "Yes" ;
+    :globalMagneticField "Yes" ;
+      :perihelion "2741"^^xsd:decimal ;
+    :aphelion "3004"^^xsd:decimal ;
+    :orbitalPeriod "30687"^^xsd:decimal ;
+    :orbitalVelocity "6.8"^^xsd:decimal ;
+    :orbitalEccentricity "0.046"^^xsd:decimal ;
+    :obliquityToOrbit "97.8"^^xsd:decimal ;
+    :surfacePressure "Unknown" ;
+    :surfaceTemperature "-197" ;
+    :atmosphericPressure "Unknown" ;
+    :surfaceFeatures [
+        rdf:type rdf:Bag ;
+        rdf:_1 "Ice" ;
+        rdf:_2 "Methane Clouds"
+    ] ;
+    :composition [
+        rdf:type rdf:Bag ;
+        rdf:_1 "Water" ;
+        rdf:_2 "Methane" ;
+        rdf:_3 "Ammonia"
+    ] ;
+   :hasSatellite [
+    rdf:type rdf:Bag ;
+    rdf:_1 :Ariel ;
+    rdf:_2 :Umbriel ;
+    rdf:_3 :Titania ;
+    rdf:_4 :Oberon ;
+    rdf:_5 :Miranda ;
+    rdf:_6 :Cordelia ;
+    rdf:_7 :Ophelia ;
+    rdf:_8 :Bianca ;
+    rdf:_9 :Cressida ;
+    rdf:_10 :Desdemona ;
+    rdf:_11 :Juliet ;
+    rdf:_12 :Portia ;
+    rdf:_13 :Rosalind ;
+    rdf:_14 :Belinda ;
+    rdf:_15 :Puck ;
+    rdf:_16 :Caliban ;
+    rdf:_17 :Sycorax ;
+    rdf:_18 :Prospero ;
+    rdf:_19 :Setebos ;
+    rdf:_20 :Stephano ;
+    rdf:_21 :Trinculo ;
+    rdf:_22 :Francisco ;
+    rdf:_23 :Margaret ;
+    rdf:_24 :Ferdinand ;
+    rdf:_25 :Perdita ;
+    rdf:_26 :Mab ;
+    rdf:_27 :Cupid
+] .
+
+:Neptune rdf:type :Planet ;
+    rdfs:label "Neptune" ;
+    :colorPlanet [ rdf:_1 "Blue" ] ;
+    :atmosphericComposition [ rdf:_1 "Hydrogen" ; rdf:_2 "Helium" ] ;
+    :mass 102 ;
+    :diameter 49244 ;
+    :density 1638 ;
+    :surfaceGravity 11.0 ;
+    :escapeVelocity 23.5 ;
+    :rotationPeriod 16.1 ;
+    :lengthOfDay 16.1 ;
+    :distanceFromSun 4495.1 ;
+    :meanTemperature -200 ;
+    :numberOfMoons 14 ;
+    :ringSystem "Yes" ;
+    :globalMagneticField "Yes" ;
+    :perihelion "4444.5"^^xsd:decimal ;
+    :aphelion "4545.7"^^xsd:decimal ;
+    :orbitalPeriod "60190"^^xsd:decimal ;
+    :orbitalVelocity "5.4"^^xsd:decimal ;
+    :orbitalEccentricity "0.010"^^xsd:decimal ;
+    :obliquityToOrbit "28.3"^^xsd:decimal ;
+    :surfacePressure "Unknown" ;
+    :surfaceTemperature "-201" ;
+    :atmosphericPressure "Unknown" ;
+    :surfaceFeatures [
+        rdf:type rdf:Bag ;
+        rdf:_1 "Storms" ;
+        rdf:_2 "Methane Clouds"
+    ] ;
+    :composition [
+        rdf:type rdf:Bag ;
+        rdf:_1 "Water" ;
+        rdf:_2 "Methane" ;
+        rdf:_3 "Ammonia"
+    ] ;
+    :hasSatellite [
+    rdf:type rdf:Bag ;
+    rdf:_1 :Triton ;
+    rdf:_2 :Nereid ;
+    rdf:_3 :Naiad ;
+    rdf:_4 :Thalassa ;
+    rdf:_5 :Despina ;
+    rdf:_6 :Galatea ;
+    rdf:_7 :Larissa ;
+    rdf:_8 :Proteus ;
+    rdf:_9 :Halimede ;
+    rdf:_10 :Psamathe ;
+    rdf:_11 :Sao ;
+    rdf:_12 :Laomedeia ;
+    rdf:_13 :Neso ;
+    rdf:_14 :S_2004_N1
+] .

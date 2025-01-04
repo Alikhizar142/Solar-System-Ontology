@@ -1,0 +1,219 @@
+@prefix : <http://example.org/solarsystem#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Ontology Metadata
+<http://example.org/solarsystem> rdf:type :SolarSystem ;
+    rdfs:label "Solar System" ;
+    rdfs:comment "An ontology describing the Solar System, its planets, and celestial objects." .
+
+### Classes
+:SolarSystem rdf:type rdfs:Class ;
+    rdfs:label "Solar System" ;
+    rdfs:comment "The Solar System containing planets and celestial objects." .
+
+:Planet rdf:type rdfs:Class ;
+    rdfs:label "Planet" ;
+    rdfs:comment "A celestial body orbiting the Sun." .
+
+:satellite rdf:type rdfs:Class ;
+    rdfs:label "satellite" ;
+    rdfs:comment "A natural satellite orbiting a planet." .
+
+### Property linking planets with moons
+:hasSatellite rdf:type rdf:Property ;
+    rdfs:label "has satellite" ;
+    rdfs:domain :Planet ;
+    rdfs:range :Moon ;
+    rdfs:comment "Links a planet to its moons." .
+
+:has_Planets rdf:type rdf:Property ;
+    rdfs:label "has Planets" ;
+    rdfs:domain :SolarSystem ;
+    rdfs:range :Planet ;
+    rdfs:comment "Links the Solar System to its planets." .
+
+### Properties
+:colorPlanet rdf:type rdf:Property ;
+    rdfs:label "colorPlanet" ;
+    rdfs:domain :Planet ;
+    rdfs:range rdf:Bag ;
+    rdfs:comment "Primary colorPlanets of the planet." .
+
+:mass rdf:type rdf:Property ;
+    rdfs:label "mass" ;
+    rdfs:domain :Planet ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "Mass of the planet in 10^24 kg." .
+
+:diameter rdf:type rdf:Property ;
+    rdfs:label "diameter" ;
+    rdfs:domain :Planet ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "Diameter of the planet in kilometers." .
+
+:density rdf:type rdf:Property ;
+    rdfs:label "density" ;
+    rdfs:domain :Planet ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "Density of the planet in kg/m^3." .
+
+:surfaceGravity rdf:type rdf:Property ;
+    rdfs:label "surface gravity" ;
+    rdfs:domain :Planet ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "Surface gravity of the planet in m/s^2." .
+
+:escapeVelocity rdf:type rdf:Property ;
+    rdfs:label "escape velocity" ;
+    rdfs:domain :Planet ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "Escape velocity of the planet in km/s." .
+
+:rotationPeriod rdf:type rdf:Property ;
+    rdfs:label "rotation period" ;
+    rdfs:domain :Planet ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "Rotation period of the planet in hours." .
+
+:lengthOfDay rdf:type rdf:Property ;
+    rdfs:label "length of day" ;
+    rdfs:domain :Planet ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "Length of a day on the planet in hours." .
+
+:distanceFromSun rdf:type rdf:Property ;
+    rdfs:label "distance from Sun" ;
+    rdfs:domain :Planet ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "Average distance of the planet from the Sun in million km." .
+
+:meanTemperature rdf:type rdf:Property ;
+    rdfs:label "mean temperature" ;
+    rdfs:domain :Planet ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "Mean surface temperature of the planet in Celsius." .
+
+:numberOfMoons rdf:type rdf:Property ;
+    rdfs:label "number of moons" ;
+    rdfs:domain :Planet ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "Number of moons orbiting the planet." .
+
+:ringSystem rdf:type rdf:Property ;
+    rdfs:label "ring system" ;
+    rdfs:domain :Planet ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Indicates if the planet has a ring system." .
+
+:globalMagneticField rdf:type rdf:Property ;
+    rdfs:label "global magnetic field" ;
+    rdfs:domain :Planet ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Indicates if the planet has a global magnetic field." .
+
+:atmosphericComposition rdf:type rdf:Property ;
+    rdfs:label "atmospheric composition" ;
+    rdfs:domain :Planet ;
+    rdfs:range rdf:Bag ;
+    rdfs:comment "The atmospheric composition of the planet." .
+
+:perihelion106km rdf:type rdf:Property ;
+    rdfs:label "Perihelion106km" ;
+    rdfs:domain :Planet ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The closest distance of the planet to the Sun in million km." .
+
+:aphelion rdf:type rdf:Property ;
+    rdfs:label "Aphelion106km" ;
+    rdfs:domain :Planet ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The farthest distance of the planet from the Sun in million km." .
+
+:orbitalPeriod rdf:type rdf:Property ;
+    rdfs:label "Orbitalperioddays" ;
+    rdfs:domain :Planet ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The time taken by the planet to complete one orbit around the Sun, in days." .
+
+:orbitalVelocity rdf:type rdf:Property ;
+    rdfs:label "Orbitalvelocitykms" ;
+    rdfs:domain :Planet ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The average orbital speed of the planet in km/s." .
+
+:orbitalEccentricity rdf:type rdf:Property ;
+    rdfs:label "Orbitaleccentricity" ;
+    rdfs:domain :Planet ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The measure of how elliptical the planet's orbit is." .
+
+:obliquityToOrbit rdf:type rdf:Property ;
+    rdfs:label "obliquityToorbit" ;
+    rdfs:domain :Planet ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The tilt of the planet's axis relative to its orbit, in degrees." .
+
+:surfacePressure rdf:type rdf:Property ;
+    rdfs:label "Surfacepressurebars" ;
+    rdfs:domain :Planet ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The atmospheric pressure at the planet's surface, in bars." .
+
+:surfaceTemperature rdf:type rdf:Property ;
+    rdfs:label "Surfacetemperaturec" ;
+    rdfs:domain :Planet ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The average surface temperature of the planet, in degrees Celsius." .
+
+:atmosphericPressure rdf:type rdf:Property ;
+    rdfs:label "Atmosphericpressure" ;
+    rdfs:domain :Planet ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The pressure of the atmosphere at the surface, in bars." .
+
+:surfaceFeatures rdf:type rdf:Property ;
+    rdfs:label "Surfacefeatures" ;
+    rdfs:domain :Planet ;
+    rdfs:range rdf:Bag ;
+    rdfs:comment "Distinctive features found on the planet's surface." .
+
+:composition rdf:type rdf:Property ;
+    rdfs:label "Composition" ;
+    rdfs:domain :Planet ;
+    rdfs:range rdf:Bag ;
+    rdfs:comment "The overall chemical composition of the planet." .
+
+### Solar System
+<http://example.org/solarsystem> :has_Planets :Mercury, :Venus, :Earth, :Mars, :Jupiter, :Saturn, :Uranus, :Neptune .
+### Properties for moons
+:gm rdf:type rdf:Property ;
+    rdfs:label "Gravitational parameter" ;
+    rdfs:domain :satellite ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The gravitational parameter of the moon." .
+
+:radius rdf:type rdf:Property ;
+    rdfs:label "Radius" ;
+    rdfs:domain :satellite ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The radius of the moon in kilometers." .
+
+:density rdf:type rdf:Property ;
+    rdfs:label "Density" ;
+    rdfs:domain :satellite ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The density of the moon in g/cm^3." .
+
+:magnitude rdf:type rdf:Property ;
+    rdfs:label "Apparent Magnitude" ;
+    rdfs:domain :satellite ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The apparent magnitude of the moon." .
+
+:albedo rdf:type rdf:Property ;
+    rdfs:label "Albedo" ;
+    rdfs:domain :satellite ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The reflectivity of the moon." .

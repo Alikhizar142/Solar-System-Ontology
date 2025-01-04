@@ -1,0 +1,1734 @@
+
+    @prefix : <http://example.org/solarsystem#> .
+    @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+    ### satellite: satellite
+    :Moon rdf:type :satellite ;
+        rdfs:label "Moon" ;
+        :gm "4902.801±0.001" ;
+        :radius "1737.5±0.1" ;
+        :density "3.344±0.005" ;
+        :magnitude "-12.74" ;
+        :albedo "0.12" ;
+        :hasSatellite :Earth .  # Linking satellite to its planet
+    
+    ### satellite: Phobos
+    :Phobos rdf:type :satellite ;
+        rdfs:label "Phobos" ;
+        :gm "0.0007112±0.0000010" ;
+        :radius "11.1±0.15" ;
+        :density "1.872±0.076" ;
+        :magnitude "11.4±0.2" ;
+        :albedo "0.071±0.012" ;
+        :hasSatellite :Mars .  # Linking satellite to its planet
+    
+    ### satellite: Deimos
+    :Deimos rdf:type :satellite ;
+        rdfs:label "Deimos" ;
+        :gm "0.0000985±0.0000024" ;
+        :radius "6.2±0.18" ;
+        :density "1.471±0.166" ;
+        :magnitude "12.45±0.05" ;
+        :albedo "0.068±0.007" ;
+        :hasSatellite :Mars .  # Linking satellite to its planet
+    
+    ### satellite: Io
+    :Io rdf:type :satellite ;
+        rdfs:label "Io" ;
+        :gm "5959.916±0.012" ;
+        :radius "1821.6±0.5" ;
+        :density "3.528±0.006" ;
+        :magnitude "5.02±0.03" ;
+        :albedo "0.63±0.02" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Europa
+    :Europa rdf:type :satellite ;
+        rdfs:label "Europa" ;
+        :gm "3202.739±0.009" ;
+        :radius "1560.8±0.5" ;
+        :density "3.013±0.005" ;
+        :magnitude "5.29±0.02" ;
+        :albedo "0.67±0.03" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Ganymede
+    :Ganymede rdf:type :satellite ;
+        rdfs:label "Ganymede" ;
+        :gm "9887.834±0.017" ;
+        :radius "2631.2±1.7" ;
+        :density "1.942±0.005" ;
+        :magnitude "4.61±0.03" ;
+        :albedo "0.43±0.02" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Callisto
+    :Callisto rdf:type :satellite ;
+        rdfs:label "Callisto" ;
+        :gm "7179.289±0.013" ;
+        :radius "2410.3±1.5" ;
+        :density "1.834±0.004" ;
+        :magnitude "5.65±0.10" ;
+        :albedo "0.17±0.02" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Amalthea
+    :Amalthea rdf:type :satellite ;
+        rdfs:label "Amalthea" ;
+        :gm "0.138±0.030" ;
+        :radius "83.45±2.4" ;
+        :density "0.849±0.199" ;
+        :magnitude "14.1±0.2" ;
+        :albedo "0.090±0.005" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Himalia
+    :Himalia rdf:type :satellite ;
+        rdfs:label "Himalia" ;
+        :gm "0.45" ;
+        :radius "85" ;
+        :density "2.6" ;
+        :magnitude "14.2R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Elara
+    :Elara rdf:type :satellite ;
+        rdfs:label "Elara" ;
+        :gm "0.058" ;
+        :radius "43" ;
+        :density "2.6" ;
+        :magnitude "16.0R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Pasiphae
+    :Pasiphae rdf:type :satellite ;
+        rdfs:label "Pasiphae" ;
+        :gm "0.020" ;
+        :radius "30" ;
+        :density "2.6" ;
+        :magnitude "16.8R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Sinope
+    :Sinope rdf:type :satellite ;
+        rdfs:label "Sinope" ;
+        :gm "0.0050" ;
+        :radius "19" ;
+        :density "2.6" ;
+        :magnitude "18.2R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Lysithea
+    :Lysithea rdf:type :satellite ;
+        rdfs:label "Lysithea" ;
+        :gm "0.0042" ;
+        :radius "18" ;
+        :density "2.6" ;
+        :magnitude "18.1R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Carme
+    :Carme rdf:type :satellite ;
+        rdfs:label "Carme" ;
+        :gm "0.0088" ;
+        :radius "23" ;
+        :density "2.6" ;
+        :magnitude "18.1R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Ananke
+    :Ananke rdf:type :satellite ;
+        rdfs:label "Ananke" ;
+        :gm "0.0020" ;
+        :radius "14" ;
+        :density "2.6" ;
+        :magnitude "19.1R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Leda
+    :Leda rdf:type :satellite ;
+        rdfs:label "Leda" ;
+        :gm "0.00073" ;
+        :radius "10" ;
+        :density "2.6" ;
+        :magnitude "19.2R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Thebe
+    :Thebe rdf:type :satellite ;
+        rdfs:label "Thebe" ;
+        :gm "0.10" ;
+        :radius "49.3±2.0" ;
+        :density "3.0" ;
+        :magnitude "16.0" ;
+        :albedo "0.047±0.003" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Adrastea
+    :Adrastea rdf:type :satellite ;
+        rdfs:label "Adrastea" ;
+        :gm "0.0005" ;
+        :radius "8.2±2.0" ;
+        :density "3.0" ;
+        :magnitude "18.7" ;
+        :albedo "0.1±0.045" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Metis
+    :Metis rdf:type :satellite ;
+        rdfs:label "Metis" ;
+        :gm "0.008" ;
+        :radius "21.5±2.0" ;
+        :density "3.0" ;
+        :magnitude "17.5" ;
+        :albedo "0.061±0.003" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Callirrhoe
+    :Callirrhoe rdf:type :satellite ;
+        rdfs:label "Callirrhoe" ;
+        :gm "0.000058" ;
+        :radius "4.3" ;
+        :density "2.6" ;
+        :magnitude "20.8R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Themisto
+    :Themisto rdf:type :satellite ;
+        rdfs:label "Themisto" ;
+        :gm "0.000046" ;
+        :radius "4.0" ;
+        :density "2.6" ;
+        :magnitude "21.0R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Megaclite
+    :Megaclite rdf:type :satellite ;
+        rdfs:label "Megaclite" ;
+        :gm "0.000014" ;
+        :radius "2.7" ;
+        :density "2.6" ;
+        :magnitude "21.7R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Taygete
+    :Taygete rdf:type :satellite ;
+        rdfs:label "Taygete" ;
+        :gm "0.000011" ;
+        :radius "2.5" ;
+        :density "2.6" ;
+        :magnitude "21.9R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Chaldene
+    :Chaldene rdf:type :satellite ;
+        rdfs:label "Chaldene" ;
+        :gm "0.000005" ;
+        :radius "1.9" ;
+        :density "2.6" ;
+        :magnitude "22.5R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Harpalyke
+    :Harpalyke rdf:type :satellite ;
+        rdfs:label "Harpalyke" ;
+        :gm "0.000008" ;
+        :radius "2.2" ;
+        :density "2.6" ;
+        :magnitude "22.2R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Kalyke
+    :Kalyke rdf:type :satellite ;
+        rdfs:label "Kalyke" ;
+        :gm "0.000013" ;
+        :radius "2.6" ;
+        :density "2.6" ;
+        :magnitude "21.8R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Iocaste
+    :Iocaste rdf:type :satellite ;
+        rdfs:label "Iocaste" ;
+        :gm "0.000013" ;
+        :radius "2.6" ;
+        :density "2.6" ;
+        :magnitude "21.8R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Erinome
+    :Erinome rdf:type :satellite ;
+        rdfs:label "Erinome" ;
+        :gm "0.000003" ;
+        :radius "1.6" ;
+        :density "2.6" ;
+        :magnitude "22.8R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Isonoe
+    :Isonoe rdf:type :satellite ;
+        rdfs:label "Isonoe" ;
+        :gm "0.000005" ;
+        :radius "1.9" ;
+        :density "2.6" ;
+        :magnitude "22.5R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Praxidike
+    :Praxidike rdf:type :satellite ;
+        rdfs:label "Praxidike" ;
+        :gm "0.000029" ;
+        :radius "3.4" ;
+        :density "2.6" ;
+        :magnitude "21.2R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Autonoe
+    :Autonoe rdf:type :satellite ;
+        rdfs:label "Autonoe" ;
+        :gm "0.000006" ;
+        :radius "2.0" ;
+        :density "2.6" ;
+        :magnitude "22.0R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Thyone
+    :Thyone rdf:type :satellite ;
+        rdfs:label "Thyone" ;
+        :gm "0.000006" ;
+        :radius "2.0" ;
+        :density "2.6" ;
+        :magnitude "22.3R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Hermippe
+    :Hermippe rdf:type :satellite ;
+        rdfs:label "Hermippe" ;
+        :gm "0.000006" ;
+        :radius "2.0" ;
+        :density "2.6" ;
+        :magnitude "22.1R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Aitne
+    :Aitne rdf:type :satellite ;
+        rdfs:label "Aitne" ;
+        :gm "0.000003" ;
+        :radius "1.5" ;
+        :density "2.6" ;
+        :magnitude "22.7R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Eurydome
+    :Eurydome rdf:type :satellite ;
+        rdfs:label "Eurydome" ;
+        :gm "0.000003" ;
+        :radius "1.5" ;
+        :density "2.6" ;
+        :magnitude "22.7R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Euanthe
+    :Euanthe rdf:type :satellite ;
+        rdfs:label "Euanthe" ;
+        :gm "0.000003" ;
+        :radius "1.5" ;
+        :density "2.6" ;
+        :magnitude "22.8R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Euporie
+    :Euporie rdf:type :satellite ;
+        rdfs:label "Euporie" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "23.1R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Orthosie
+    :Orthosie rdf:type :satellite ;
+        rdfs:label "Orthosie" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "23.1R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Sponde
+    :Sponde rdf:type :satellite ;
+        rdfs:label "Sponde" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "23.0R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Kale
+    :Kale rdf:type :satellite ;
+        rdfs:label "Kale" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "23.0R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Pasithee
+    :Pasithee rdf:type :satellite ;
+        rdfs:label "Pasithee" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "23.2R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Hegemone
+    :Hegemone rdf:type :satellite ;
+        rdfs:label "Hegemone" ;
+        :gm "0.000003" ;
+        :radius "1.5" ;
+        :density "2.6" ;
+        :magnitude "22.8R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Mneme
+    :Mneme rdf:type :satellite ;
+        rdfs:label "Mneme" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "23.3R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Aoede
+    :Aoede rdf:type :satellite ;
+        rdfs:label "Aoede" ;
+        :gm "0.000006" ;
+        :radius "2.0" ;
+        :density "2.6" ;
+        :magnitude "22.5R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Thelxinoe
+    :Thelxinoe rdf:type :satellite ;
+        rdfs:label "Thelxinoe" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "23.5R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Arche
+    :Arche rdf:type :satellite ;
+        rdfs:label "Arche" ;
+        :gm "0.000003" ;
+        :radius "1.5" ;
+        :density "2.6" ;
+        :magnitude "22.8R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Kallichore
+    :Kallichore rdf:type :satellite ;
+        rdfs:label "Kallichore" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "23.7R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Helike
+    :Helike rdf:type :satellite ;
+        rdfs:label "Helike" ;
+        :gm "0.000006" ;
+        :radius "2.0" ;
+        :density "2.6" ;
+        :magnitude "22.6R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Carpo
+    :Carpo rdf:type :satellite ;
+        rdfs:label "Carpo" ;
+        :gm "0.000003" ;
+        :radius "1.5" ;
+        :density "2.6" ;
+        :magnitude "23.0R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Eukelade
+    :Eukelade rdf:type :satellite ;
+        rdfs:label "Eukelade" ;
+        :gm "0.000006" ;
+        :radius "2.0" ;
+        :density "2.6" ;
+        :magnitude "22.6R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Cyllene
+    :Cyllene rdf:type :satellite ;
+        rdfs:label "Cyllene" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "23.2R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Kore
+    :Kore rdf:type :satellite ;
+        rdfs:label "Kore" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "23.6R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Herse
+    :Herse rdf:type :satellite ;
+        rdfs:label "Herse" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "23.4R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: S_2000 J11
+    :S_2000_J11 rdf:type :satellite ;
+        rdfs:label "S_2000 J11" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "22.4R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: S_2003 J2
+    :S_2003_J2 rdf:type :satellite ;
+        rdfs:label "S_2003 J2" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "23.2R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: S_2003 J3
+    :S_2003_J3 rdf:type :satellite ;
+        rdfs:label "S_2003 J3" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "23.4R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: S_2003 J4
+    :S_2003_J4 rdf:type :satellite ;
+        rdfs:label "S_2003 J4" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "23.0R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: S_2003 J5
+    :S_2003_J5 rdf:type :satellite ;
+        rdfs:label "S_2003 J5" ;
+        :gm "0.000006" ;
+        :radius "2.0" ;
+        :density "2.6" ;
+        :magnitude "22.4R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: S_2003 J9
+    :S_2003_J9 rdf:type :satellite ;
+        rdfs:label "S_2003 J9" ;
+        :gm "0.0000001" ;
+        :radius "0.5" ;
+        :density "2.6" ;
+        :magnitude "23.7R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: S_2003 J10
+    :S_2003_J10 rdf:type :satellite ;
+        rdfs:label "S_2003 J10" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "23.6R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: S_2003 J12
+    :S_2003_J12 rdf:type :satellite ;
+        rdfs:label "S_2003 J12" ;
+        :gm "0.0000001" ;
+        :radius "0.5" ;
+        :density "2.6" ;
+        :magnitude "23.9R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: S_2003 J15
+    :S_2003_J15 rdf:type :satellite ;
+        rdfs:label "S_2003 J15" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "23.5R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: S_2003 J16
+    :S_2003_J16 rdf:type :satellite ;
+        rdfs:label "S_2003 J16" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "23.3R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: S_2003 J18
+    :S_2003_J18 rdf:type :satellite ;
+        rdfs:label "S_2003 J18" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "23.4R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: S_2003 J19
+    :S_2003_J19 rdf:type :satellite ;
+        rdfs:label "S_2003 J19" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "23.7R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: S_2003 J23
+    :S_2003_J23 rdf:type :satellite ;
+        rdfs:label "S_2003 J23" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "23.6R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: S_2010 J1
+    :S_2010_J1 rdf:type :satellite ;
+        rdfs:label "S_2010 J1" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "23.2r" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: S_2010 J2
+    :S_2010_J2 rdf:type :satellite ;
+        rdfs:label "S_2010 J2" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "24.0r" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: S_2011 J1
+    :S_2011_J1 rdf:type :satellite ;
+        rdfs:label "S_2011 J1" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "23.7R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: S_2011 J2
+    :S_2011_J2 rdf:type :satellite ;
+        rdfs:label "S_2011 J2" ;
+        :gm "0.000001" ;
+        :radius "1.0" ;
+        :density "2.6" ;
+        :magnitude "23.5R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Jupiter .  # Linking satellite to its planet
+    
+    ### satellite: Mimas
+    :Mimas rdf:type :satellite ;
+        rdfs:label "Mimas" ;
+        :gm "2.5026±0.0006" ;
+        :radius "198.20±0.25" ;
+        :density "1.150±0.004" ;
+        :magnitude "12.8" ;
+        :albedo "0.962±0.004" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Enceladus
+    :Enceladus rdf:type :satellite ;
+        rdfs:label "Enceladus" ;
+        :gm "7.2027±0.0125" ;
+        :radius "252.10±0.10" ;
+        :density "1.608±0.003" ;
+        :magnitude "11.8" ;
+        :albedo "1.375±0.008" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Tethys
+    :Tethys rdf:type :satellite ;
+        rdfs:label "Tethys" ;
+        :gm "41.2067±0.0038" ;
+        :radius "533.00±0.70" ;
+        :density "0.973±0.004" ;
+        :magnitude "10.2" ;
+        :albedo "1.229±0.005" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Dione
+    :Dione rdf:type :satellite ;
+        rdfs:label "Dione" ;
+        :gm "73.1146±0.0015" ;
+        :radius "561.70±0.45" ;
+        :density "1.476±0.004" ;
+        :magnitude "10.4" ;
+        :albedo "0.998±0.004" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Rhea
+    :Rhea rdf:type :satellite ;
+        rdfs:label "Rhea" ;
+        :gm "153.9426±0.0037" ;
+        :radius "764.30±1.10" ;
+        :density "1.233±0.005" ;
+        :magnitude "9.6" ;
+        :albedo "0.949±0.003" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Titan
+    :Titan rdf:type :satellite ;
+        rdfs:label "Titan" ;
+        :gm "8978.1382±0.0020" ;
+        :radius "2574.73±0.09" ;
+        :density "1.882±0.001" ;
+        :magnitude "8.4" ;
+        :albedo "0.2" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Hyperion
+    :Hyperion rdf:type :satellite ;
+        rdfs:label "Hyperion" ;
+        :gm "0.3727±0.0012" ;
+        :radius "135.00±4.00" ;
+        :density "0.544±0.050" ;
+        :magnitude "14.4" ;
+        :albedo "0.3" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Iapetus
+    :Iapetus rdf:type :satellite ;
+        rdfs:label "Iapetus" ;
+        :gm "120.5038±0.0080" ;
+        :radius "735.60±1.50" ;
+        :density "1.083±0.007" ;
+        :magnitude "11" ;
+        :albedo "0.6" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Phoebe
+    :Phoebe rdf:type :satellite ;
+        rdfs:label "Phoebe" ;
+        :gm "0.5532±0.0006" ;
+        :radius "106.50±0.70" ;
+        :density "1.638±0.033" ;
+        :magnitude "16.4" ;
+        :albedo "0.081±0.002" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Janus
+    :Janus rdf:type :satellite ;
+        rdfs:label "Janus" ;
+        :gm "0.1263±0.0087" ;
+        :radius "89.5±1.5" ;
+        :density "0.630±0.030" ;
+        :magnitude "14.4" ;
+        :albedo "0.71±0.02" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Epimetheus
+    :Epimetheus rdf:type :satellite ;
+        rdfs:label "Epimetheus" ;
+        :gm "0.0351±0.0047" ;
+        :radius "58.1±1.8" ;
+        :density "0.640±0.062" ;
+        :magnitude "15.6" ;
+        :albedo "0.73±0.03" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Helene
+    :Helene rdf:type :satellite ;
+        rdfs:label "Helene" ;
+        :gm "0.00076" ;
+        :radius "17.6±0.4" ;
+        :density "0.5" ;
+        :magnitude "18.4" ;
+        :albedo "1.67±0.20" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Telesto
+    :Telesto rdf:type :satellite ;
+        rdfs:label "Telesto" ;
+        :gm "0.00027" ;
+        :radius "12.4±0.4" ;
+        :density "0.5" ;
+        :magnitude "18.5" ;
+        :albedo "1.0" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Calypso
+    :Calypso rdf:type :satellite ;
+        rdfs:label "Calypso" ;
+        :gm "0.00017" ;
+        :radius "10.7±0.7" ;
+        :density "0.5" ;
+        :magnitude "18.7" ;
+        :albedo "1.34±0.10" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Atlas
+    :Atlas rdf:type :satellite ;
+        rdfs:label "Atlas" ;
+        :gm "0.00044±0.00015" ;
+        :radius "15.1±1.2" ;
+        :density "0.460±0.110" ;
+        :magnitude "19.0" ;
+        :albedo "0.4" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Prometheus
+    :Prometheus rdf:type :satellite ;
+        rdfs:label "Prometheus" ;
+        :gm "0.01074±0.00285" ;
+        :radius "43.1±2.7" ;
+        :density "0.480±0.090" ;
+        :magnitude "15.8" ;
+        :albedo "0.6" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Pandora
+    :Pandora rdf:type :satellite ;
+        rdfs:label "Pandora" ;
+        :gm "0.00924±0.00152" ;
+        :radius "40.7±1.5" ;
+        :density "0.490±0.060" ;
+        :magnitude "16.4" ;
+        :albedo "0.5" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Pan
+    :Pan rdf:type :satellite ;
+        rdfs:label "Pan" ;
+        :gm "0.00033±0.00015" ;
+        :radius "14.1±1.3" ;
+        :density "0.420±0.150" ;
+        :magnitude "19.4" ;
+        :albedo "0.5" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Methone
+    :Methone rdf:type :satellite ;
+        rdfs:label "Methone" ;
+        :gm "0.0000006" ;
+        :radius "1.6±0.6" ;
+        :density "0.5" ;
+        :magnitude "?" ;
+        :albedo "?" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Pallene
+    :Pallene rdf:type :satellite ;
+        rdfs:label "Pallene" ;
+        :gm "0.0000022" ;
+        :radius "2.5±0.6" ;
+        :density "0.5" ;
+        :magnitude "?" ;
+        :albedo "?" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Polydeuces
+    :Polydeuces rdf:type :satellite ;
+        rdfs:label "Polydeuces" ;
+        :gm "0.0000003" ;
+        :radius "1.3±0.4" ;
+        :density "0.5" ;
+        :magnitude "?" ;
+        :albedo "?" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Daphnis
+    :Daphnis rdf:type :satellite ;
+        rdfs:label "Daphnis" ;
+        :gm "0.0000052±0.0000052" ;
+        :radius "3.8±0.8" ;
+        :density "0.340±0.260" ;
+        :magnitude "?" ;
+        :albedo "?" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Anthe
+    :Anthe rdf:type :satellite ;
+        rdfs:label "Anthe" ;
+        :gm "0.0000001" ;
+        :radius "0.9" ;
+        :density "0.5" ;
+        :magnitude "?" ;
+        :albedo "?" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Aegaeon
+    :Aegaeon rdf:type :satellite ;
+        rdfs:label "Aegaeon" ;
+        :gm "0.000000004" ;
+        :radius "0.3" ;
+        :density "0.5" ;
+        :magnitude "?" ;
+        :albedo "?" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Ymir
+    :Ymir rdf:type :satellite ;
+        rdfs:label "Ymir" ;
+        :gm "0.00033" ;
+        :radius "9" ;
+        :density "2.3" ;
+        :magnitude "21.9R" ;
+        :albedo "0.06" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Paaliaq
+    :Paaliaq rdf:type :satellite ;
+        rdfs:label "Paaliaq" ;
+        :gm "0.00055" ;
+        :radius "11.0" ;
+        :density "2.3" ;
+        :magnitude "21.1R" ;
+        :albedo "0.06" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Tarvos
+    :Tarvos rdf:type :satellite ;
+        rdfs:label "Tarvos" ;
+        :gm "0.00018" ;
+        :radius "7.5" ;
+        :density "2.3" ;
+        :magnitude "22.7R" ;
+        :albedo "0.06" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Ijiraq
+    :Ijiraq rdf:type :satellite ;
+        rdfs:label "Ijiraq" ;
+        :gm "0.000080" ;
+        :radius "6" ;
+        :density "2.3" ;
+        :magnitude "22.6R" ;
+        :albedo "0.06" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Suttungr
+    :Suttungr rdf:type :satellite ;
+        rdfs:label "Suttungr" ;
+        :gm "0.000014" ;
+        :radius "3.5" ;
+        :density "2.3" ;
+        :magnitude "23.9R" ;
+        :albedo "0.06" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Kiviuq
+    :Kiviuq rdf:type :satellite ;
+        rdfs:label "Kiviuq" ;
+        :gm "0.00022" ;
+        :radius "8" ;
+        :density "2.3" ;
+        :magnitude "22.1R" ;
+        :albedo "0.06" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Mundilfari
+    :Mundilfari rdf:type :satellite ;
+        rdfs:label "Mundilfari" ;
+        :gm "0.000014" ;
+        :radius "3.5" ;
+        :density "2.3" ;
+        :magnitude "23.8R" ;
+        :albedo "0.06" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Albiorix
+    :Albiorix rdf:type :satellite ;
+        rdfs:label "Albiorix" ;
+        :gm "0.0014" ;
+        :radius "16" ;
+        :density "2.3" ;
+        :magnitude "20.5R" ;
+        :albedo "0.06" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Skathi
+    :Skathi rdf:type :satellite ;
+        rdfs:label "Skathi" ;
+        :gm "0.000021" ;
+        :radius "4" ;
+        :density "2.3" ;
+        :magnitude "23.6R" ;
+        :albedo "0.06" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Erriapus
+    :Erriapus rdf:type :satellite ;
+        rdfs:label "Erriapus" ;
+        :gm "0.000051" ;
+        :radius "5" ;
+        :density "2.3" ;
+        :magnitude "23.4R" ;
+        :albedo "0.06" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Siarnaq
+    :Siarnaq rdf:type :satellite ;
+        rdfs:label "Siarnaq" ;
+        :gm "0.0026" ;
+        :radius "20" ;
+        :density "2.3" ;
+        :magnitude "19.9R" ;
+        :albedo "0.06" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Thrymr
+    :Thrymr rdf:type :satellite ;
+        rdfs:label "Thrymr" ;
+        :gm "0.000014" ;
+        :radius "3.5" ;
+        :density "2.3" ;
+        :magnitude "23.9R" ;
+        :albedo "0.06" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Narvi
+    :Narvi rdf:type :satellite ;
+        rdfs:label "Narvi" ;
+        :gm "0.000023" ;
+        :radius "3.5" ;
+        :density "2.3" ;
+        :magnitude "23.8R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Aegir
+    :Aegir rdf:type :satellite ;
+        rdfs:label "Aegir" ;
+        :gm "0.000000" ;
+        :radius "3.0" ;
+        :density "2.3" ;
+        :magnitude "24.4R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Bebhionn
+    :Bebhionn rdf:type :satellite ;
+        rdfs:label "Bebhionn" ;
+        :gm "0.000000" ;
+        :radius "3.0" ;
+        :density "2.3" ;
+        :magnitude "24.1R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Bergelmir
+    :Bergelmir rdf:type :satellite ;
+        rdfs:label "Bergelmir" ;
+        :gm "0.000000" ;
+        :radius "3.0" ;
+        :density "2.3" ;
+        :magnitude "24.2R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Bestla
+    :Bestla rdf:type :satellite ;
+        rdfs:label "Bestla" ;
+        :gm "0.000000" ;
+        :radius "3.5" ;
+        :density "2.3" ;
+        :magnitude "23.8R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Farbauti
+    :Farbauti rdf:type :satellite ;
+        rdfs:label "Farbauti" ;
+        :gm "0.000000" ;
+        :radius "2.5" ;
+        :density "2.3" ;
+        :magnitude "24.7R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Fenrir
+    :Fenrir rdf:type :satellite ;
+        rdfs:label "Fenrir" ;
+        :gm "0.000000" ;
+        :radius "2.0" ;
+        :density "2.3" ;
+        :magnitude "25.0R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Fornjot
+    :Fornjot rdf:type :satellite ;
+        rdfs:label "Fornjot" ;
+        :gm "0.000000" ;
+        :radius "3.0" ;
+        :density "2.3" ;
+        :magnitude "24.6R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Hati
+    :Hati rdf:type :satellite ;
+        rdfs:label "Hati" ;
+        :gm "0.000000" ;
+        :radius "3.0" ;
+        :density "2.3" ;
+        :magnitude "24.4R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Hyrrokkin
+    :Hyrrokkin rdf:type :satellite ;
+        rdfs:label "Hyrrokkin" ;
+        :gm "0.000000" ;
+        :radius "3.0" ;
+        :density "2.3" ;
+        :magnitude "23.5R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Kari
+    :Kari rdf:type :satellite ;
+        rdfs:label "Kari" ;
+        :gm "0.000000" ;
+        :radius "3.0" ;
+        :density "2.3" ;
+        :magnitude "23.9R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Loge
+    :Loge rdf:type :satellite ;
+        rdfs:label "Loge" ;
+        :gm "0.000000" ;
+        :radius "3.0" ;
+        :density "2.3" ;
+        :magnitude "24.6R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Skoll
+    :Skoll rdf:type :satellite ;
+        rdfs:label "Skoll" ;
+        :gm "0.000000" ;
+        :radius "3.0" ;
+        :density "2.3" ;
+        :magnitude "24.5R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Surtur
+    :Surtur rdf:type :satellite ;
+        rdfs:label "Surtur" ;
+        :gm "0.000000" ;
+        :radius "3.0" ;
+        :density "2.3" ;
+        :magnitude "24.8R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Jarnsaxa
+    :Jarnsaxa rdf:type :satellite ;
+        rdfs:label "Jarnsaxa" ;
+        :gm "0.000000" ;
+        :radius "3.0" ;
+        :density "2.3" ;
+        :magnitude "24.7R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Greip
+    :Greip rdf:type :satellite ;
+        rdfs:label "Greip" ;
+        :gm "0.000000" ;
+        :radius "3.0" ;
+        :density "2.3" ;
+        :magnitude "24.4R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Tarqeq
+    :Tarqeq rdf:type :satellite ;
+        rdfs:label "Tarqeq" ;
+        :gm "0.000000" ;
+        :radius "3.0" ;
+        :density "2.3" ;
+        :magnitude "23.9R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: S_2004 S7
+    :S_2004_S7 rdf:type :satellite ;
+        rdfs:label "S_2004 S7" ;
+        :gm "0.000000" ;
+        :radius "3.0" ;
+        :density "2.3" ;
+        :magnitude "24.5R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: S_2004 S12
+    :S_2004_S12 rdf:type :satellite ;
+        rdfs:label "S_2004 S12" ;
+        :gm "0.000000" ;
+        :radius "2.5" ;
+        :density "2.3" ;
+        :magnitude "24.8R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: S_2004 S13
+    :S_2004_S13 rdf:type :satellite ;
+        rdfs:label "S_2004 S13" ;
+        :gm "0.000000" ;
+        :radius "3.0" ;
+        :density "2.3" ;
+        :magnitude "24.5R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: S_2004 S17
+    :S_2004_S17 rdf:type :satellite ;
+        rdfs:label "S_2004 S17" ;
+        :gm "0.000000" ;
+        :radius "2.0" ;
+        :density "2.3" ;
+        :magnitude "25.2R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: S_2006 S1
+    :S_2006_S1 rdf:type :satellite ;
+        rdfs:label "S_2006 S1" ;
+        :gm "0.000000" ;
+        :radius "3.0" ;
+        :density "2.3" ;
+        :magnitude "24.6R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: S_2006 S3
+    :S_2006_S3 rdf:type :satellite ;
+        rdfs:label "S_2006 S3" ;
+        :gm "0.000000" ;
+        :radius "2.5" ;
+        :density "2.3" ;
+        :magnitude "24.6R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: S_2007 S2
+    :S_2007_S2 rdf:type :satellite ;
+        rdfs:label "S_2007 S2" ;
+        :gm "0.000000" ;
+        :radius "3.0" ;
+        :density "2.3" ;
+        :magnitude "24.4R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: S_2007 S3
+    :S_2007_S3 rdf:type :satellite ;
+        rdfs:label "S_2007 S3" ;
+        :gm "0.000000" ;
+        :radius "2.0" ;
+        :density "2.3" ;
+        :magnitude "24.9R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Saturn .  # Linking satellite to its planet
+    
+    ### satellite: Ariel
+    :Ariel rdf:type :satellite ;
+        rdfs:label "Ariel" ;
+        :gm "86.4±5.0" ;
+        :radius "578.9±0.6" ;
+        :density "1.592±0.092" ;
+        :magnitude "13.70±0.04" ;
+        :albedo "0.39±0.04" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Umbriel
+    :Umbriel rdf:type :satellite ;
+        rdfs:label "Umbriel" ;
+        :gm "81.5±5.0" ;
+        :radius "584.7±2.8" ;
+        :density "1.459±0.092" ;
+        :magnitude "14.47±0.04" ;
+        :albedo "0.21±0.02" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Titania
+    :Titania rdf:type :satellite ;
+        rdfs:label "Titania" ;
+        :gm "228.2±5.0" ;
+        :radius "788.9±1.8" ;
+        :density "1.662±0.038" ;
+        :magnitude "13.49±0.04" ;
+        :albedo "0.27±0.03" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Oberon
+    :Oberon rdf:type :satellite ;
+        rdfs:label "Oberon" ;
+        :gm "192.4±7.0" ;
+        :radius "761.4±2.6" ;
+        :density "1.559±0.059" ;
+        :magnitude "13.70±0.04" ;
+        :albedo "0.23±0.03" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Miranda
+    :Miranda rdf:type :satellite ;
+        rdfs:label "Miranda" ;
+        :gm "4.4±0.4" ;
+        :radius "235.8±0.7" ;
+        :density "1.214±0.109" ;
+        :magnitude "15.79±0.04" ;
+        :albedo "0.32±0.03" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Cordelia
+    :Cordelia rdf:type :satellite ;
+        rdfs:label "Cordelia" ;
+        :gm "0.0030" ;
+        :radius "20.1±3." ;
+        :density "1.3" ;
+        :magnitude "23.62±0.35" ;
+        :albedo "0.07" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Ophelia
+    :Ophelia rdf:type :satellite ;
+        rdfs:label "Ophelia" ;
+        :gm "0.0036" ;
+        :radius "21.4±4." ;
+        :density "1.3" ;
+        :magnitude "23.26±0.25" ;
+        :albedo "0.07" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Bianca
+    :Bianca rdf:type :satellite ;
+        rdfs:label "Bianca" ;
+        :gm "0.0062" ;
+        :radius "27±2" ;
+        :density "1.3" ;
+        :magnitude "22.52±0.24" ;
+        :albedo "0.065±0.010" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Cressida
+    :Cressida rdf:type :satellite ;
+        rdfs:label "Cressida" ;
+        :gm "0.0229" ;
+        :radius "41±2" ;
+        :density "1.3" ;
+        :magnitude "21.58±0.11" ;
+        :albedo "0.069±0.007" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Desdemona
+    :Desdemona rdf:type :satellite ;
+        rdfs:label "Desdemona" ;
+        :gm "0.0119" ;
+        :radius "35±4" ;
+        :density "1.3" ;
+        :magnitude "21.99±0.16" ;
+        :albedo "0.084±0.019" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Juliet
+    :Juliet rdf:type :satellite ;
+        rdfs:label "Juliet" ;
+        :gm "0.0372" ;
+        :radius "53±4" ;
+        :density "1.3" ;
+        :magnitude "21.12±0.05" ;
+        :albedo "0.075±0.011" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Portia
+    :Portia rdf:type :satellite ;
+        rdfs:label "Portia" ;
+        :gm "0.1122" ;
+        :radius "70±4" ;
+        :density "1.3" ;
+        :magnitude "20.42±0.05" ;
+        :albedo "0.069±0.008" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Rosalind
+    :Rosalind rdf:type :satellite ;
+        rdfs:label "Rosalind" ;
+        :gm "0.0170" ;
+        :radius "36±6" ;
+        :density "1.3" ;
+        :magnitude "21.79±0.13" ;
+        :albedo "0.072±0.024" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Belinda
+    :Belinda rdf:type :satellite ;
+        rdfs:label "Belinda" ;
+        :gm "0.0238" ;
+        :radius "45±8" ;
+        :density "1.3" ;
+        :magnitude "21.47±0.09" ;
+        :albedo "0.067±0.024" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Puck
+    :Puck rdf:type :satellite ;
+        rdfs:label "Puck" ;
+        :gm "0.1931" ;
+        :radius "81±2" ;
+        :density "1.3" ;
+        :magnitude "19.75±0.05" ;
+        :albedo "0.104±0.006" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Caliban
+    :Caliban rdf:type :satellite ;
+        rdfs:label "Caliban" ;
+        :gm "0.020" ;
+        :radius "36" ;
+        :density "1.5" ;
+        :magnitude "22.4R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Sycorax
+    :Sycorax rdf:type :satellite ;
+        rdfs:label "Sycorax" ;
+        :gm "0.18" ;
+        :radius "75" ;
+        :density "1.5" ;
+        :magnitude "20.8R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Prospero
+    :Prospero rdf:type :satellite ;
+        rdfs:label "Prospero" ;
+        :gm "0.0066" ;
+        :radius "25" ;
+        :density "1.5" ;
+        :magnitude "23.2R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Setebos
+    :Setebos rdf:type :satellite ;
+        rdfs:label "Setebos" ;
+        :gm "0.0058" ;
+        :radius "24" ;
+        :density "1.5" ;
+        :magnitude "23.3R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Stephano
+    :Stephano rdf:type :satellite ;
+        rdfs:label "Stephano" ;
+        :gm "0.0017" ;
+        :radius "16" ;
+        :density "1.5" ;
+        :magnitude "24.1R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Trinculo
+    :Trinculo rdf:type :satellite ;
+        rdfs:label "Trinculo" ;
+        :gm "0.00031" ;
+        :radius "9" ;
+        :density "1.5" ;
+        :magnitude "25.4R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Francisco
+    :Francisco rdf:type :satellite ;
+        rdfs:label "Francisco" ;
+        :gm "0.00056" ;
+        :radius "11" ;
+        :density "1.5" ;
+        :magnitude "25.0R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Margaret
+    :Margaret rdf:type :satellite ;
+        rdfs:label "Margaret" ;
+        :gm "0.00042" ;
+        :radius "10" ;
+        :density "1.5" ;
+        :magnitude "25.2R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Ferdinand
+    :Ferdinand rdf:type :satellite ;
+        rdfs:label "Ferdinand" ;
+        :gm "0.00042" ;
+        :radius "10" ;
+        :density "1.5" ;
+        :magnitude "25.1R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Perdita
+    :Perdita rdf:type :satellite ;
+        rdfs:label "Perdita" ;
+        :gm "0.0012" ;
+        :radius "13±1" ;
+        :density "1.3" ;
+        :magnitude "23.6V" ;
+        :albedo "0.070±0.006" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Mab
+    :Mab rdf:type :satellite ;
+        rdfs:label "Mab" ;
+        :gm "0.0006" ;
+        :radius "12±1" ;
+        :density "1.3" ;
+        :magnitude "24.6V" ;
+        :albedo "0.103±0.006" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Cupid
+    :Cupid rdf:type :satellite ;
+        rdfs:label "Cupid" ;
+        :gm "0.0002" ;
+        :radius "9±1" ;
+        :density "1.3" ;
+        :magnitude "25.8V" ;
+        :albedo "0.070±0.006" ;
+        :hasSatellite :Uranus .  # Linking satellite to its planet
+    
+    ### satellite: Triton
+    :Triton rdf:type :satellite ;
+        rdfs:label "Triton" ;
+        :gm "1427.6±1.9" ;
+        :radius "1353.4±0.9" ;
+        :density "2.059±0.005" ;
+        :magnitude "13.54" ;
+        :albedo "0.719" ;
+        :hasSatellite :Neptune .  # Linking satellite to its planet
+    
+    ### satellite: Nereid
+    :Nereid rdf:type :satellite ;
+        rdfs:label "Nereid" ;
+        :gm "2.06" ;
+        :radius "170.±25." ;
+        :density "1.5" ;
+        :magnitude "19.2R" ;
+        :albedo "0.155" ;
+        :hasSatellite :Neptune .  # Linking satellite to its planet
+    
+    ### satellite: Naiad
+    :Naiad rdf:type :satellite ;
+        rdfs:label "Naiad" ;
+        :gm "0.013" ;
+        :radius "33.±3." ;
+        :density "1.3" ;
+        :magnitude "23.91" ;
+        :albedo "0.072" ;
+        :hasSatellite :Neptune .  # Linking satellite to its planet
+    
+    ### satellite: Thalassa
+    :Thalassa rdf:type :satellite ;
+        rdfs:label "Thalassa" ;
+        :gm "0.025" ;
+        :radius "41.±3." ;
+        :density "1.3" ;
+        :magnitude "23.32" ;
+        :albedo "0.091" ;
+        :hasSatellite :Neptune .  # Linking satellite to its planet
+    
+    ### satellite: Despina
+    :Despina rdf:type :satellite ;
+        rdfs:label "Despina" ;
+        :gm "0.14" ;
+        :radius "75.±3." ;
+        :density "1.3" ;
+        :magnitude "22.00" ;
+        :albedo "0.090" ;
+        :hasSatellite :Neptune .  # Linking satellite to its planet
+    
+    ### satellite: Galatea
+    :Galatea rdf:type :satellite ;
+        rdfs:label "Galatea" ;
+        :gm "0.25" ;
+        :radius "88.±4." ;
+        :density "1.3" ;
+        :magnitude "21.85" ;
+        :albedo "0.079" ;
+        :hasSatellite :Neptune .  # Linking satellite to its planet
+    
+    ### satellite: Larissa
+    :Larissa rdf:type :satellite ;
+        rdfs:label "Larissa" ;
+        :gm "0.33" ;
+        :radius "97.±3." ;
+        :density "1.3" ;
+        :magnitude "21.49" ;
+        :albedo "0.091" ;
+        :hasSatellite :Neptune .  # Linking satellite to its planet
+    
+    ### satellite: Proteus
+    :Proteus rdf:type :satellite ;
+        rdfs:label "Proteus" ;
+        :gm "3.36" ;
+        :radius "210.±7." ;
+        :density "1.3" ;
+        :magnitude "19.75" ;
+        :albedo "0.096" ;
+        :hasSatellite :Neptune .  # Linking satellite to its planet
+    
+    ### satellite: Halimede
+    :Halimede rdf:type :satellite ;
+        rdfs:label "Halimede" ;
+        :gm "0.012" ;
+        :radius "31.0" ;
+        :density "1.5" ;
+        :magnitude "24.5R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Neptune .  # Linking satellite to its planet
+    
+    ### satellite: Psamathe
+    :Psamathe rdf:type :satellite ;
+        rdfs:label "Psamathe" ;
+        :gm "0.0033" ;
+        :radius "20.0" ;
+        :density "1.5" ;
+        :magnitude "25.5R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Neptune .  # Linking satellite to its planet
+    
+    ### satellite: Sao
+    :Sao rdf:type :satellite ;
+        rdfs:label "Sao" ;
+        :gm "0.0045" ;
+        :radius "22.0" ;
+        :density "1.5" ;
+        :magnitude "25.5R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Neptune .  # Linking satellite to its planet
+    
+    ### satellite: Laomedeia
+    :Laomedeia rdf:type :satellite ;
+        rdfs:label "Laomedeia" ;
+        :gm "0.0039" ;
+        :radius "21.0" ;
+        :density "1.5" ;
+        :magnitude "25.5R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Neptune .  # Linking satellite to its planet
+    
+    ### satellite: Neso
+    :Neso rdf:type :satellite ;
+        rdfs:label "Neso" ;
+        :gm "0.011" ;
+        :radius "30.0" ;
+        :density "1.5" ;
+        :magnitude "24.6R" ;
+        :albedo "0.04" ;
+        :hasSatellite :Neptune .  # Linking satellite to its planet
+    
+    ### satellite: S_2004 N1
+    :S_2004_N1 rdf:type :satellite ;
+        rdfs:label "S_2004 N1" ;
+        :gm "0.0003" ;
+        :radius "9.0" ;
+        :density "1.3" ;
+        :magnitude "26.5V" ;
+        :albedo "0.10" ;
+        :hasSatellite :Neptune .  # Linking satellite to its planet
+    
+    ### satellite: Nosatellite
+    :Nosatellite rdf:type :satellite;
+         rdfs:label  "Nosatellite";
+         :hasSatellite :Mercury.
+
+    :Nosatellite rdf:type :satellite;
+         rdfs:label  "Nosatellite";
+         :hasSatellite :Venus.

@@ -37,10 +37,17 @@ This project presents a **Solar System Ontology** implemented using **Turtle for
 ## Example Query
 Find all moons orbiting Jupiter:
 ```sparql
-PREFIX ex: <http://example.org/solarsystem#>
-SELECT ?moon
+PREFIX : <http://example.org/solarsystem#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?moonName 
 WHERE {
-  ?moon ex:orbits ex:Jupiter .
+  ?moon a :satellite ;
+        :hasSatellite :Jupiter ;
+        rdfs:label ?moonName .
+}
+
 }
 ```
 
